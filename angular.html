@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+	<div ng-app = "myApp" ng-controller="myCtrl">
+		<h1>Area de rectangulos</h1>
+		<p>Base <input type="number" ng-model="base"></p>
+		<p>Altura <input type="number" ng-model="altura"></p>
+		<button ng-click="calcular()">calcular</button>
+		<hr>
+		<p>Perimetro: {{ perimetro }}</p>
+		<p>Area: {{ area }}</p>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Hacer un pequeño to do list -->
+	<title>to do</title>
+</head>
+<body ng-app = "to_do" ng-controller = "ctrl">
+	<h2>Por hacer</h2>
+	<div>
+		<p>
+			<input type="text" ng-model="item">  <button ng-click="agregar(item)">agregar</button>
+		</p>
+		<ul>
+			<li ng-repeat="i in items">
+				{{i}}
+			</li>
+		</ul>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script type="text/javascript" src="to_do.js"></script>
+</body>
+
+</html>
